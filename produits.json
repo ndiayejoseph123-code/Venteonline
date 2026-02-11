@@ -18,5 +18,15 @@
     "image": "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=800&auto=format&fit=crop",
     "vendeur": "Fatou Nature",
     "whatsapp": "+221789876543"
-  }
+  },
+  {
+    "id": 3,
+    "nom": "livre",
+    "prix": 2000,
+    "devise": "FCFA",
+    "description": " éducatif",
+    "image": "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=800&auto=format&fit=crop",
+    "vendeur": "jos",
+    "whatsapp": "777195288"
+  },
 ]
