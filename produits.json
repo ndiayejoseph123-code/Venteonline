@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nom": "Pagne wax motif étoilé",
+    "prix": 12000,
+    "devise": "FCFA",
+    "description": "Tissu wax de haute qualité – 6 mètres – motif étoilé bleu et jaune",
+    "image": "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d26?w=800&auto=format&fit=crop&q=80",
+    "vendeur": "Awa Couture",
+    "whatsapp": "+221771234567"
+  },
+  {
+    "id": 2,
+    "nom": "Beurre de karité pur",
+    "prix": 3500,
+    "devise": "FCFA",
+    "description": "Pot de 1 kg – fabrication artisanale – sans additif",
+    "image": "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=800&auto=format&fit=crop",
+    "vendeur": "Fatou Nature",
+    "whatsapp": "+221789876543"
+  }
+]

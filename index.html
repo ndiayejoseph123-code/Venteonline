@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Marché – Test</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      color: #111827;
+      margin-bottom: 1.8rem;
+    }
+
+    #produits-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      #produits-container {
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      }
+    }
+
+    .produit {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .image-container {
+      height: 240px;
+      overflow: hidden;
+      background: #f3f4f6;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .info {
+      padding: 1.4rem;
+    }
+
+    .nom {
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .prix {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #b91c1c;
+      margin: 0.6rem 0;
+    }
+
+    .description {
+      color: #4b5563;
+      margin: 0.8rem 0 1rem;
+    }
+
+    .vendeur {
+      color: #374151;
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      background: #25D366;
+      color: white;
+      padding: 0.85rem 1.6rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn-whatsapp:hover {
+      background: #22c55e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mon Marché</h1>
+    <p>Produits locaux – Dakar & Sénégal</p>
+  </header>
+
+  <main>
+    <section id="produits">
+      <h2>Produits disponibles</h2>
+      
+      <div id="produits-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 – Mon Marché en ligne</p>
+  </footer>
+
+  <script>
+    // Produit de test
+    const produits = [
+      {
+        id: 1,
+        nom: "Pagne wax motif étoilé",
+        prix: 12000,
+        devise: "FCFA",
+        description: "Tissu wax de haute qualité – 6 mètres – motif étoilé bleu et jaune",
+        // Image très fiable pour le test (Unsplash)
+        image: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d26?w=800&auto=format&fit=crop&q=80",
+        vendeur: "Awa Couture",
+        whatsapp: "+221771234567"
+      }
+    ];
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.getElementById("produits-container");
+
+      produits.forEach(p => {
+        const div = document.createElement("div");
+        div.className = "produit";
+
+        div.innerHTML = `
+          <div class="image-container">
+            <img 
+              src="${p.image}" 
+              alt="${p.nom}" 
+              loading="lazy"
+              onerror="this.src='https://via.placeholder.com/340x240?text=Image+non+disponible';"
+            >
+          </div>
+          <div class="info">
+            <div class="nom">${p.nom}</div>
+            <div class="prix">${p.prix.toLocaleString()} ${p.devise}</div>
+            <div class="description">${p.description}</div>
+            <div class="vendeur">Vendeur : ${p.vendeur}</div>
+            
+            <a href="https://wa.me/${p.whatsapp.replace(/\D/g,'')}?text=Bonjour ! Je suis intéressé(e) par ${encodeURIComponent(p.nom)}" 
+               class="btn-whatsapp" 
+               target="_blank">
+              Contacter via WhatsApp
+            </a>
+          </div>
+        `;
+
+        container.appendChild(div);
+      });
+    });
+  </script>
+
+</body>
+</html>
