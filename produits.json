@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "nom": "Pagne wax motif étoilé",
+    "nom": "lacoste",
     "prix": 5000,
     "devise": "FCFA",
-    "description": "Tissu wax de haute qualité – 6 mètres – motif étoilé bleu et jaune",
-    "image": "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d26?w=800&auto=format&fit=crop&q=80",
-    "vendeur": "Awa Couture",
-    "whatsapp": "+221771234567"
+    "description": "lacoste en coton",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image4.jpg",
+    "vendeur": "marie diouf",
+    "whatsapp": "+221777195288"
   },
   {
     "id": 2,
