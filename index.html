@@ -123,6 +123,12 @@
       color: #6b7280;
       font-size: 0.9rem;
     }
+
+    .erreur {
+      text-align: center;
+      color: #dc2626;
+      padding: 2rem;
+    }
   </style>
 </head>
 <body>
@@ -136,7 +142,9 @@
     <section id="produits">
       <h2>Produits disponibles</h2>
       
-      <div id="produits-container"></div>
+      <div id="produits-container">
+        <p style="text-align:center; color:#6b7280;">Chargement des produits...</p>
+      </div>
     </section>
   </main>
 
@@ -145,53 +153,66 @@
   </footer>
 
   <script>
-    // Produit de test
-    const produits = [
-      {
-        id: 1,
-        nom: "Pagne wax motif étoilé",
-        prix: 12000,
-        devise: "FCFA",
-        description: "Tissu wax de haute qualité – 6 mètres – motif étoilé bleu et jaune",
-        // Image très fiable pour le test (Unsplash)
-        image: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d26?w=800&auto=format&fit=crop&q=80",
-        vendeur: "Awa Couture",
-        whatsapp: "+221771234567"
-      }
-    ];
-
-    document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("DOMContentLoaded", function () {
       const container = document.getElementById("produits-container");
 
-      produits.forEach(p => {
-        const div = document.createElement("div");
-        div.className = "produit";
+      // On tente de charger le JSON
+      fetch("produits.json")
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Fichier produits.json non trouvé ou inaccessible (code " + response.status + ")");
+          }
+          return response.json();
+        })
+        .then(produits => {
+          // On vide le message de chargement
+          container.innerHTML = "";
 
-        div.innerHTML = `
-          <div class="image-container">
-            <img 
-              src="${p.image}" 
-              alt="${p.nom}" 
-              loading="lazy"
-              onerror="this.src='https://via.placeholder.com/340x240?text=Image+non+disponible';"
-            >
-          </div>
-          <div class="info">
-            <div class="nom">${p.nom}</div>
-            <div class="prix">${p.prix.toLocaleString()} ${p.devise}</div>
-            <div class="description">${p.description}</div>
-            <div class="vendeur">Vendeur : ${p.vendeur}</div>
-            
-            <a href="https://wa.me/${p.whatsapp.replace(/\D/g,'')}?text=Bonjour ! Je suis intéressé(e) par ${encodeURIComponent(p.nom)}" 
-               class="btn-whatsapp" 
-               target="_blank">
-              Contacter via WhatsApp
-            </a>
-          </div>
-        `;
+          if (!Array.isArray(produits) || produits.length === 0) {
+            container.innerHTML = '<p class="erreur">Aucun produit trouvé dans le fichier JSON</p>';
+            return;
+          }
 
-        container.appendChild(div);
-      });
+          produits.forEach(p => {
+            const div = document.createElement("div");
+            div.className = "produit";
+
+            div.innerHTML = `
+              <div class="image-container">
+                <img 
+                  src="${p.image || 'https://via.placeholder.com/340x240?text=Pas+d\'image'}" 
+                  alt="${p.nom || 'Produit'}" 
+                  loading="lazy"
+                  onerror="this.src='https://via.placeholder.com/340x240?text=Image+introuvable';"
+                >
+              </div>
+              <div class="info">
+                <div class="nom">${p.nom || 'Sans nom'}</div>
+                <div class="prix">${(p.prix || 0).toLocaleString()} ${p.devise || 'FCFA'}</div>
+                <div class="description">${p.description || 'Aucune description'}</div>
+                <div class="vendeur">Vendeur : ${p.vendeur || 'Anonyme'}</div>
+                
+                <a href="https://wa.me/${(p.whatsapp || '').replace(/\D/g,'')}?text=Bonjour ! Je suis intéressé(e) par ${encodeURIComponent(p.nom || 'votre produit')}" 
+                   class="btn-whatsapp" 
+                   target="_blank" rel="noopener">
+                  Contacter via WhatsApp
+                </a>
+              </div>
+            `;
+
+            container.appendChild(div);
+          });
+        })
+        .catch(error => {
+          console.error("Erreur lors du chargement :", error);
+          container.innerHTML = `
+            <p class="erreur">
+              Impossible de charger les produits<br>
+              <small>${error.message}</small><br>
+              <small>Vérifiez que produits.json existe bien à la racine du dépôt</small>
+            </p>
+          `;
+        });
     });
   </script>
 
