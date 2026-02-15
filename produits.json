@@ -1,42 +1,42 @@
 [
   {
     "id": 1,
-    "nom": "lacoste",
-    "prix": 5000,
+    "nom": "",
+    "prix": xxx,
     "devise": "FCFA",
-    "description": "lacoste en coton",
-    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image4.jpg",
-    "vendeur": "marie diouf",
-    "whatsapp": "+221777195288"
+    "description": "",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image5.jpg",
+    "vendeur": "mr ndiaye",
+    "whatsapp": "+221776662302"
   },
   {
     "id": 2,
-    "nom": "Beurre de karité pur",
-    "prix": 3500,
+    "nom": "",
+    "prix": ,
     "devise": "FCFA",
-    "description": "Pot de 1 kg – fabrication artisanale – sans additif",
-    "image": "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=800&auto=format&fit=crop",
-    "vendeur": "Fatou Nature",
-    "whatsapp": "+221789876543"
+    "description": "",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image6.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
   },
   {
     "id": 3,
-    "nom": "livre",
-    "prix": 2000,
+    "nom": "",
+    "prix": ,
     "devise": "FCFA",
-    "description": " éducatif",
-    "image": "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=800&auto=format&fit=crop",
-    "vendeur": "jos",
-    "whatsapp": "+221777195288"
+    "description": "",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image7.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
   },
   {
   "id": 4,
-  "nom": "Cahier",
-  "prix": 250,
+  "nom": "",
+  "prix": ,
   "devise": "FCFA",
-  "description": "Bon",
-  "image": "rien",
-  "vendeur": "Jo",
-  "whatsapp": "+221777195288"
+  "description": "",
+  "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image8.jpg",
+  "vendeur": "mr Ndiaye",
+  "whatsapp": "+221776662302"
   }
 ]
