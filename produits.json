@@ -11,8 +11,8 @@
   },
   {
     "id": 2,
-    "nom": "b",
-    "prix": 1,
+    "nom": "sac",
+    "prix": 30000,
     "devise": "FCFA",
     "description": "",
     "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image6.jpg",
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "nom": "c",
-    "prix": 1,
+    "prix": 13000,
     "devise": "FCFA",
     "description": "",
     "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image7.jpg",
@@ -32,7 +32,7 @@
   {
   "id": 4,
   "nom": "d",
-  "prix": 1,
+  "prix": 13000,
   "devise": "FCFA",
   "description": "",
   "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image8.jpg",
