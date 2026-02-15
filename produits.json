@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "nom": "",
-    "prix": ,
+    "nom": "a",
+    "prix": 1,
     "devise": "FCFA",
     "description": "",
     "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image5.jpg",
@@ -11,8 +11,8 @@
   },
   {
     "id": 2,
-    "nom": "",
-    "prix": ,
+    "nom": "b",
+    "prix": 1,
     "devise": "FCFA",
     "description": "",
     "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image6.jpg",
@@ -21,8 +21,8 @@
   },
   {
     "id": 3,
-    "nom": "",
-    "prix": ,
+    "nom": "c",
+    "prix": 1,
     "devise": "FCFA",
     "description": "",
     "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image7.jpg",
@@ -31,8 +31,8 @@
   },
   {
   "id": 4,
-  "nom": "",
-  "prix": ,
+  "nom": "d",
+  "prix": 1,
   "devise": "FCFA",
   "description": "",
   "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image8.jpg",
