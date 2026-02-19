@@ -2,11 +2,11 @@
   {
     "id": 1,
     "nom": "a",
-    "prix": 00,
+    "prix": 13000,
     "devise": "FCFA",
     "description": "",
     "image": "",
-    "vendeur": "",
-    "whatsapp": "72"
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
   }
 ]
