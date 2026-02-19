@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "nom": "a",
+    "nom": "chaussures",
     "prix": 13000,
     "devise": "FCFA",
-    "description": "",
-    "image": "",
+    "description": "des chaussures de qualité pas cher",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image5.jpg",
     "vendeur": "mr Ndiaye",
     "whatsapp": "+221776662302"
   }
