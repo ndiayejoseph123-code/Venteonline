@@ -8,5 +8,49 @@
     "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image5.jpg",
     "vendeur": "mr Ndiaye",
     "whatsapp": "+221776662302"
+  },
+  
+  {
+    "id": 1,
+    "nom": "chaussures",
+    "prix": 30000,
+    "devise": "FCFA",
+    "description": "sac en cuir payable en deux tranches",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image6.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
+  },
+  
+  {
+    "id": 1,
+    "nom": "chaussures",
+    "prix": 13000,
+    "devise": "FCFA",
+    "description": "des chaussures de qualité pas cher",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image7.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
+  },
+  
+  {
+    "id": 1,
+    "nom": "chaussures",
+    "prix": 13000,
+    "devise": "FCFA",
+    "description": "des chaussures de qualité pas cher",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image8.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
+  },
+  
+  {
+    "id": 1,
+    "nom": "chaussures",
+    "prix": 13000,
+    "devise": "FCFA",
+    "description": "des chaussures de qualité pas cher",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image9.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
   }
 ]
