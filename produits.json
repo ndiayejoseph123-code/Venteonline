@@ -52,5 +52,93 @@
     "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image9.jpg",
     "vendeur": "mr Ndiaye",
     "whatsapp": "+221776662302"
+  },
+  
+  {
+    "id": 1,
+    "nom": "chaussures",
+    "prix": 30000,
+    "devise": "FCFA",
+    "description": "des chaussures de qualité pas cher",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image11.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
+  },
+  
+  {
+    "id": 1,
+    "nom": "chaussures",
+    "prix": 30000,
+    "devise": "FCFA",
+    "description": "des chaussures de qualité pas cher",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image12.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
+  },
+  
+  {
+    "id": 1,
+    "nom": "chaussures",
+    "prix": 13000,
+    "devise": "FCFA",
+    "description": "des chaussures de qualité pas cher",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image13.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
+  },
+  
+  {
+    "id": 1,
+    "nom": "pochette",
+    "prix": 5000,
+    "devise": "FCFA",
+    "description": "des pochettes de qualité pas cher",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image14.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
+  },
+  
+  {
+    "id": 1,
+    "nom": "pochette",
+    "prix": 7000,
+    "devise": "FCFA",
+    "description": "des pochettes de qualité pas cher",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image15.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
+  },
+  
+  {
+    "id": 1,
+    "nom": "sac",
+    "prix": 15000,
+    "devise": "FCFA",
+    "description": "des chaussures de qualité pas cher",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image16.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
+  },
+  
+  {
+    "id": 1,
+    "nom": "chaussures",
+    "prix": 25000,
+    "devise": "FCFA",
+    "description": "des chaussures de qualité pas cher",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image17.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
+  },
+  
+  {
+    "id": 1,
+    "nom": "chaussures",
+    "prix": 18000,
+    "devise": "FCFA",
+    "description": "des chaussures de qualité pas cher",
+    "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image18.jpg",
+    "vendeur": "mr Ndiaye",
+    "whatsapp": "+221776662302"
   }
 ]
