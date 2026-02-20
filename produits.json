@@ -12,7 +12,7 @@
   {
     "id": 1,
     "nom": "chaussures",
-    "prix": 13000,
+    "prix": 00,
     "devise": "FCFA",
     "description": "des chaussures de qualité pas cher",
     "image": "https://raw.githubusercontent.com/ndiayejoseph123-code/Prod-aloe/main/image5.jpg",
